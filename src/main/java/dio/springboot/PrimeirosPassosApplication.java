@@ -1,14 +1,7 @@
 package dio.springboot;
 
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
-
-import com.google.gson.Gson;
-
-import dio.springboot.app.aula2.ConversorJson;
-import dio.springboot.app.aula2.ViaCepResponse;
 
 @SpringBootApplication
 public class PrimeirosPassosApplication {
@@ -17,14 +10,23 @@ public class PrimeirosPassosApplication {
 		SpringApplication.run(PrimeirosPassosApplication.class, args);
 	}
 
-	@Bean
-	public CommandLineRunner run(ConversorJson conversor) throws Exception {
-		return args -> {
-			String json = "{\"cep\":\"01001-000\",\"logradouro\":\"Praça da Sé\", \"cidade\":\"São Paulo\"}";
-			ViaCepResponse response = conversor.converter(json);
-			System.out.println("Dados do CEP: " + response);
-		};
-	}
+//	@Bean // Aula 3
+//	public CommandLineRunner run(SistemaMensagem sistema) throws Exception {
+//		return args -> {
+//			sistema.enviarConfirmacaoCadastro();
+//			sistema.enviarMensagemBoasVindas();
+//			sistema.enviarConfirmacaoCadastro();
+//		};
+//	}
+	
+//	@Bean // Aula 2
+//	public CommandLineRunner run(ConversorJson conversor) throws Exception {
+//		return args -> {
+//			String json = "{\"cep\":\"01001-000\",\"logradouro\":\"Praça da Sé\", \"cidade\":\"São Paulo\"}";
+//			ViaCepResponse response = conversor.converter(json);
+//			System.out.println("Dados do CEP: " + response);
+//		};
+//	}
 
 
 }
