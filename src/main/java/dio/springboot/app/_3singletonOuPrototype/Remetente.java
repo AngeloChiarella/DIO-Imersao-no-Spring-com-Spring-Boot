@@ -1,3 +1,4 @@
+package dio.springboot.app._3singletonOuPrototype;
 //package dio.springboot.app.aula3;
 //
 //public class Remetente {

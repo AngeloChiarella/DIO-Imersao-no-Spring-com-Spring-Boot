@@ -1,3 +1,4 @@
+package dio.springboot.app._2beansVsComponentes;
 //package dio.springboot.app.aula2;
 //
 //import org.springframework.beans.factory.annotation.Autowired;
